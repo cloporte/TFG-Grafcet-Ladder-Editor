@@ -1,0 +1,113 @@
+\hypertarget{class_prototipo_t_f_g_1_1_command}{}\section{Prototipo\+T\+F\+G.\+Command Class Reference}
+\label{class_prototipo_t_f_g_1_1_command}\index{Prototipo\+T\+F\+G.\+Command@{Prototipo\+T\+F\+G.\+Command}}
+
+
+Simple implementation of I\+Command Serves as an abstraction of Actions performed by the user via interaction with the U\+I (for instance, Button Click)  
+
+
+Inheritance diagram for Prototipo\+T\+F\+G.\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_prototipo_t_f_g_1_1_command}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_prototipo_t_f_g_1_1_command_ac046e06a8fc3180c6c35dc5ae1ba9fe5}{Execute} (object parameter)
+\begin{DoxyCompactList}\small\item\em This method checks if the action is ready and initialized to call it. \end{DoxyCompactList}\item 
+bool \hyperlink{class_prototipo_t_f_g_1_1_command_a02607d3ca361db266819e3278a537ea3}{Can\+Execute} (object parameter)
+\begin{DoxyCompactList}\small\item\em This method is used to check if the \hyperlink{class_prototipo_t_f_g_1_1_command}{Command} can be executed \end{DoxyCompactList}\item 
+\hyperlink{class_prototipo_t_f_g_1_1_command_a4749034ee8ae6a635a82163330afd3a4}{Command} (Action action)
+\begin{DoxyCompactList}\small\item\em Default Constructor of \hyperlink{class_prototipo_t_f_g_1_1_command}{Command} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prototipo_t_f_g_1_1_command_a09f81350ac5b2ef027c46bb947924d4c}{}Action {\bfseries Action}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{class_prototipo_t_f_g_1_1_command_a09f81350ac5b2ef027c46bb947924d4c}
+
+\item 
+bool \hyperlink{class_prototipo_t_f_g_1_1_command_ab6c1c38eaed2116be378c9620304ac6a}{Is\+Enabled}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or Sets is\+Enabled, and Updates Can\+Execute\+Changed \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prototipo_t_f_g_1_1_command_a793c0cea61e078db18a2e1203ea7c862}{}Event\+Handler {\bfseries Can\+Execute\+Changed}\label{class_prototipo_t_f_g_1_1_command_a793c0cea61e078db18a2e1203ea7c862}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple implementation of I\+Command Serves as an abstraction of Actions performed by the user via interaction with the U\+I (for instance, Button Click) 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_prototipo_t_f_g_1_1_command_a4749034ee8ae6a635a82163330afd3a4}{}\index{Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}!Command@{Command}}
+\index{Command@{Command}!Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}}
+\subsubsection[{Command(\+Action action)}]{\setlength{\rightskip}{0pt plus 5cm}Prototipo\+T\+F\+G.\+Command.\+Command (
+\begin{DoxyParamCaption}
+\item[{Action}]{action}
+\end{DoxyParamCaption}
+)}\label{class_prototipo_t_f_g_1_1_command_a4749034ee8ae6a635a82163330afd3a4}
+
+
+Default Constructor of \hyperlink{class_prototipo_t_f_g_1_1_command}{Command} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & Action of the \hyperlink{class_prototipo_t_f_g_1_1_command}{Command}\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_prototipo_t_f_g_1_1_command_a02607d3ca361db266819e3278a537ea3}{}\index{Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}!Can\+Execute@{Can\+Execute}}
+\index{Can\+Execute@{Can\+Execute}!Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}}
+\subsubsection[{Can\+Execute(object parameter)}]{\setlength{\rightskip}{0pt plus 5cm}bool Prototipo\+T\+F\+G.\+Command.\+Can\+Execute (
+\begin{DoxyParamCaption}
+\item[{object}]{parameter}
+\end{DoxyParamCaption}
+)}\label{class_prototipo_t_f_g_1_1_command_a02607d3ca361db266819e3278a537ea3}
+
+
+This method is used to check if the \hyperlink{class_prototipo_t_f_g_1_1_command}{Command} can be executed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Reference of the object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the boolean value Is\+Enabled
+\end{DoxyReturn}
+\hypertarget{class_prototipo_t_f_g_1_1_command_ac046e06a8fc3180c6c35dc5ae1ba9fe5}{}\index{Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}!Execute@{Execute}}
+\index{Execute@{Execute}!Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}}
+\subsubsection[{Execute(object parameter)}]{\setlength{\rightskip}{0pt plus 5cm}void Prototipo\+T\+F\+G.\+Command.\+Execute (
+\begin{DoxyParamCaption}
+\item[{object}]{parameter}
+\end{DoxyParamCaption}
+)}\label{class_prototipo_t_f_g_1_1_command_ac046e06a8fc3180c6c35dc5ae1ba9fe5}
+
+
+This method checks if the action is ready and initialized to call it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Reference of the object\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_prototipo_t_f_g_1_1_command_ab6c1c38eaed2116be378c9620304ac6a}{}\index{Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}!Is\+Enabled@{Is\+Enabled}}
+\index{Is\+Enabled@{Is\+Enabled}!Prototipo\+T\+F\+G\+::\+Command@{Prototipo\+T\+F\+G\+::\+Command}}
+\subsubsection[{Is\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}bool Prototipo\+T\+F\+G.\+Command.\+Is\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_prototipo_t_f_g_1_1_command_ab6c1c38eaed2116be378c9620304ac6a}
+
+
+Gets or Sets is\+Enabled, and Updates Can\+Execute\+Changed 
+
+True or False. True means the \hyperlink{class_prototipo_t_f_g_1_1_command}{Command} can be executed.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Flutter\+Jack/\+Documents/\+Visual Studio 2013/\+Projects/\+Prototipo\+T\+F\+G/\+Prototipo\+T\+F\+G/Command.\+cs\end{DoxyCompactItemize}

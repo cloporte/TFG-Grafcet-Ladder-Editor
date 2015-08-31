@@ -1,0 +1,39 @@
+\hypertarget{namespace_prototipo_t_f_g}{}\section{Prototipo\+T\+F\+G Namespace Reference}
+\label{namespace_prototipo_t_f_g}\index{Prototipo\+T\+F\+G@{Prototipo\+T\+F\+G}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_about}{About}
+\begin{DoxyCompactList}\small\item\em Interaction logic for About.\+xaml \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_app}{App}
+\begin{DoxyCompactList}\small\item\em Interaction logic for App.\+xaml \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_command}{Command}
+\begin{DoxyCompactList}\small\item\em Simple implementation of I\+Command Serves as an abstraction of Actions performed by the user via interaction with the U\+I (for instance, Button Click) \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_connection}{Connection}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_prototipo_t_f_g_1_1_connection}{Connection} is a group of Connectors and Inter\+Nodes. These represent a connection between two Logic Elements by using multiple lines and intermediate points. The Start and End of the \hyperlink{class_prototipo_t_f_g_1_1_connection}{Connection} are references to \hyperlink{class_prototipo_t_f_g_1_1_logic_element}{Logic\+Element}. The logic implies that the Starting element is followed by the Ending Element, which means the Start considers the End as a Next element, whereas the End considers the Start as a Previous element. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_connector}{Connector}
+\begin{DoxyCompactList}\small\item\em Each connector represents each line drawn between Diagram Objects. The \hyperlink{class_prototipo_t_f_g_1_1_connector}{Connector}\textquotesingle{}s X and Y properties are always 0 because the line coordinates are actually determined, by the Start.\+X, Start.\+Y and End.\+X, End.\+Y Nodes\textquotesingle{} properties. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_diagram_data}{Diagram\+Data}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_prototipo_t_f_g_1_1_diagram_data}{Diagram\+Data} is a group of Observable\+Collections of all the Elements a Diagram has \+: Nodes, Transitions, Inter\+Nodes, Inputs, Outputs, Not\+Inputs, Not\+Ouputs, Connectors and Connections. It is all the data needed to save or load a Diagram. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_diagram_object}{Diagram\+Object}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_prototipo_t_f_g_1_1_diagram_object}{Diagram\+Object} is the basic class that represents a graphical element that might be displayed on the Diagram Area A \hyperlink{class_prototipo_t_f_g_1_1_diagram_object}{Diagram\+Object} has a name, can be a preview element, can be highlighted and also has coordinates. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_input_ladder}{Input\+Ladder}
+\begin{DoxyCompactList}\small\item\em An Input is part of the Ladder Diagram, represents an entry for a signal. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_inter_node}{Inter\+Node}
+\begin{DoxyCompactList}\small\item\em An \hyperlink{class_prototipo_t_f_g_1_1_inter_node}{Inter\+Node} is an intermediate point that are between the Connectors of a \hyperlink{class_prototipo_t_f_g_1_1_connection}{Connection} Diagram. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_logic_element}{Logic\+Element}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_prototipo_t_f_g_1_1_logic_element}{Logic\+Element} is a \hyperlink{class_prototipo_t_f_g_1_1_diagram_object}{Diagram\+Object} with logic references as Previous and Next. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_main_view_model}{Main\+View\+Model}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_prototipo_t_f_g_1_1_main_view_model}{Main\+View\+Model} is the main Business Logic Layer \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_main_window}{Main\+Window}
+\begin{DoxyCompactList}\small\item\em Interaction logic for Main\+Window.\+xaml \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_node}{Node}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_prototipo_t_f_g_1_1_node}{Node} is a Logical Step or State into the G\+R\+A\+F\+C\+E\+T Diagram. To include a compiler / simulator version this Object would need a \textquotesingle{}Is\+Active\textquotesingle{} property to know which Nodes are active during an interpretation and launch of the Diagram. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_not_input_ladder}{Not\+Input\+Ladder}
+\begin{DoxyCompactList}\small\item\em An Not\+Input is a negated version of the Ladder Diagram\textquotesingle{}s Input, represents an entry for a signal with a \textquotesingle{}not\textquotesingle{} applied to it. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_not_output_ladder}{Not\+Output\+Ladder}
+\begin{DoxyCompactList}\small\item\em An Not\+Input is a negated version of the Ladder Diagram\textquotesingle{}s Output, represents an entry for a signal with a \textquotesingle{}not\textquotesingle{} applied to it. \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_output_ladder}{Output\+Ladder}
+\begin{DoxyCompactList}\small\item\em An Output is part of the Ladder Diagram, represents an exit for a signal, connecting the result of a logical expression to a component \end{DoxyCompactList}\item 
+class \hyperlink{class_prototipo_t_f_g_1_1_transition}{Transition}
+\begin{DoxyCompactList}\small\item\em A \hyperlink{class_prototipo_t_f_g_1_1_transition}{Transition} is an element part of the G\+R\+A\+F\+C\+E\+T Diagram. It represents the logical condition between different nodes that need to fulfilled in order to continue Step by Step the execution of the Diagram. \end{DoxyCompactList}\end{DoxyCompactItemize}
