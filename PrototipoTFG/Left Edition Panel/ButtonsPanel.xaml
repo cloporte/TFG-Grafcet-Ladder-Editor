@@ -1,0 +1,141 @@
+﻿<UserControl x:Class="PrototipoTFG.Left_Edition_Panel.ButtonsPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <ResourceDictionary Source="EditorStyles.xaml"/>
+    </UserControl.Resources>
+    <StackPanel Orientation="Horizontal">
+        <!-- Button : New project -->
+        <Button Command="{Binding NewProjectCommand}" ToolTip="New Project">
+            <Image Source="/Resources/new.png" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Width="40" Height="40"
+                   Stretch="Fill" StretchDirection="Both"/>
+        </Button>
+        <!-- Button : Save project  -->
+        <Button Command="{Binding SaveProjectCommand}" ToolTip="Save project">
+            <Image Source="/Resources/save.png" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Width="40" Height="40"
+                   Stretch="Fill" StretchDirection="Both"/>
+        </Button>
+        <!-- Button : Open project  -->
+        <Button Command="{Binding OpenProjectCommand}" ToolTip="Open Project">
+            <Image Source="/Resources/open.png" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Width="40" Height="40"
+                   Stretch="Fill" StretchDirection="Both"/>
+        </Button>
+        <!-- Button : About  -->
+        <Button Command="{Binding AboutCommand}" ToolTip="About/User Guide">
+            <!-- ToolTip="About / User Guide">-->
+            <Image Source="/Resources/about.png" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Width="40" Height="40"
+                   Stretch="Fill" StretchDirection="Both"/>
+        </Button>
+            <!-- Button : Create New Node  -->
+        <ToggleButton Name="NodeButton" IsChecked="{Binding CreatingNewNode}" ToolTip="Insert Node">
+            <Rectangle Height="25" Width="25" Stroke="Black"
+                     StrokeThickness="1" Fill="White">
+            </Rectangle>
+        </ToggleButton>
+        <!-- Button : Create New Transition  -->
+        <ToggleButton IsChecked="{Binding CreatingNewTransition}" ToolTip="Insert Transition">
+            <Rectangle Height="5" Width="20" Stroke="Black" 
+                     StrokeThickness="1" Fill="Black">
+            </Rectangle>
+            <!-- Button : Create New Connection  -->
+        </ToggleButton>
+        <ToggleButton Name="interNodeButton" IsChecked="{Binding CreatingNewInterNode}" IsEnabled="{Binding Path=InterNodeEnabled}" ToolTip="Insert Connection">
+            <Canvas Height="45" Width="45">
+                <Line Stroke="Blue" StrokeThickness="2" StrokeDashArray="2 3"
+                            X1="10" Y1="10"
+                            X2="35" Y2="35"/>
+
+                <Rectangle Height="10" Width="10" Stroke="Black"
+                         Canvas.Top="5" Canvas.Left="5"
+                     StrokeThickness="1" Fill="White">
+                </Rectangle>
+
+                <Rectangle Height="10" Width="10" Stroke="Black"
+                         Canvas.Top="30" Canvas.Left="30"
+                     StrokeThickness="1" Fill="White">
+                </Rectangle>
+            </Canvas>
+        </ToggleButton>
+        <!-- Button : Create New Input  -->
+        <ToggleButton IsChecked="{Binding CreatingNewInput}" ToolTip="Insert Input">
+            <Canvas Height="45" Width="45">
+                <Rectangle Height="35" Width="30" Stroke="Black" 
+                     StrokeThickness="1" Fill="Black" Canvas.Top="5" Canvas.Left="8">
+                </Rectangle>
+                <Rectangle Height="30" Width="24" Stroke="Black" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="8" Canvas.Left="11">
+                </Rectangle>
+                <Rectangle Height="35" Width="12" Stroke="LightGray" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="5" Canvas.Left="17">
+                </Rectangle>
+            </Canvas>
+        </ToggleButton>
+        <!-- Button : Create New NotInput  -->
+        <ToggleButton IsChecked="{Binding CreatingNewNotInput}" ToolTip="Insert Not-Input">
+            <Canvas Height="45" Width="45">
+                <Rectangle Height="35" Width="30" Stroke="Black" 
+                     StrokeThickness="1" Fill="Black" Canvas.Top="5" Canvas.Left="8">
+                </Rectangle>
+                <Rectangle Height="30" Width="24" Stroke="Black" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="8" Canvas.Left="11">
+                </Rectangle>
+                <Rectangle Height="35" Width="12" Stroke="LightGray" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="5" Canvas.Left="17">
+                </Rectangle>
+                <Line Stroke="Black" StrokeThickness="3"
+                            X1="9" Y1="40"
+                            X2="37" Y2="8"/>
+            </Canvas>
+        </ToggleButton>
+        <!-- Button : Create New OutPut  -->
+        <ToggleButton IsChecked="{Binding CreatingNewOutput}" ToolTip="Insert Output">
+            <Canvas Height="45" Width="45">
+                <Ellipse Height="35" Width="30" Stroke="Black" 
+                     StrokeThickness="1" Fill="Black" Canvas.Top="5" Canvas.Left="8">
+                </Ellipse>
+                <Ellipse Height="30" Width="24" Stroke="Black" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="8" Canvas.Left="11">
+                </Ellipse>
+                <Rectangle Height="38" Width="12" Stroke="LightGray" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="4" Canvas.Left="17">
+                </Rectangle>
+            </Canvas>
+        </ToggleButton>
+        <!-- Button : Create New NotOutPut  -->
+        <ToggleButton IsChecked="{Binding CreatingNewNotOutput}" ToolTip="Insert Not-Output">
+            <Canvas Height="45" Width="45">
+                <Ellipse Height="35" Width="30" Stroke="Black" 
+                     StrokeThickness="1" Fill="Black" Canvas.Top="5" Canvas.Left="8">
+                </Ellipse>
+                <Ellipse Height="30" Width="24" Stroke="Black" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="8" Canvas.Left="11">
+                </Ellipse>
+                <Rectangle Height="38" Width="12" Stroke="LightGray" 
+                     StrokeThickness="1" Fill="LightGray" Canvas.Top="4" Canvas.Left="17">
+                </Rectangle>
+                <Line Stroke="Black" StrokeThickness="3"
+                            X1="11" Y1="38"
+                            X2="35" Y2="8"/>
+            </Canvas>
+        </ToggleButton>
+        <!-- Button : Delete  -->
+        <Button Command="{Binding DeleteCommand}" ToolTip="Delete the Selected Object">
+            <Image Source="/Resources/delete.png" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"
+                   Width="40" Height="40"
+                   Stretch="Fill" StretchDirection="Both"/>
+        </Button>
+    </StackPanel>
+</UserControl>
