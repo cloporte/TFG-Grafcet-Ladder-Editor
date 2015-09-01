@@ -24,7 +24,7 @@
         <Label Grid.Row="2" Content="Y:" />
 
         <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding X, Mode=OneWay}"/>
+        <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding X}"/>
         <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Y}"/>
     </Grid>
 </UserControl>

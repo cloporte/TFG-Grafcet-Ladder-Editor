@@ -112,5 +112,6 @@ namespace PrototipoTFG
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+
     }
 }

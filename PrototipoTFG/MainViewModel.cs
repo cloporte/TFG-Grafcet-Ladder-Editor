@@ -58,7 +58,7 @@ namespace PrototipoTFG
         {
             get { return dd.Inputs ?? (dd.Inputs = new ObservableCollection<InputLadder>()); }
         }
-
+                
         /// <summary>
         /// Gets the Outputs observable collection from the DiagramData.
         /// </summary>
@@ -112,8 +112,7 @@ namespace PrototipoTFG
         {
             get { return _selectedObject; }
             set
-            {
-                
+            {                
                 Nodes.ToList().ForEach(x => x.IsHighlighted = false);
                 Transitions.ToList().ForEach(x => x.IsHighlighted = false);
                 InterNodes.ToList().ForEach(x => x.IsHighlighted = false);
@@ -121,7 +120,6 @@ namespace PrototipoTFG
                 Outputs.ToList().ForEach(x => x.IsHighlighted = false);
                 NotInputs.ToList().ForEach(x => x.IsHighlighted = false);
                 NotOutputs.ToList().ForEach(x => x.IsHighlighted = false);
-
 
                 if (_selectedObject != null && !_selectedObject.IsNew && (_selectedObject is Node || _selectedObject is Transition
                     || _selectedObject is InterNode || _selectedObject is OutputLadder || _selectedObject is InputLadder
@@ -630,43 +628,31 @@ namespace PrototipoTFG
                 n.Start = GetDiagramObject(n.Start);
                 n.End = GetDiagramObject(n.End);
                 Collection<InterNode> auxCollection = new Collection<InterNode>();
-                foreach (InterNode inter in n.InterNodes)
-                {
-                    // For each internode, we need to make sure it is one of those already initiliazed and present in dd.InterNodes
-                    auxCollection.Add(GetDiagramObject(inter) as InterNode);
-                }
-                foreach (InterNode inter in auxCollection)
-                {
-                    n.InterNodes.Add(inter);
-                }
+                // For each internode, we need to make sure
+                // it is one of those already initiliazed and present in dd.InterNodes                    
+                foreach (InterNode inter in n.InterNodes){ auxCollection.Add(GetDiagramObject(inter) as InterNode); }
+                foreach (InterNode inter in auxCollection){ n.InterNodes.Add(inter); }
                 foreach (Connector c in n.Connectors)
                 {
                     dd.Connectors.Add(c);
                     c.Start = GetDiagramObject(c.Start);
                     c.End = GetDiagramObject(c.End);
                 }
-
-                
-
-                
             }
 
             LogicElement auxLogicElement;
             foreach (Connection n in dd.Connections)
             {
-                // We need to fill the Next and Previous lists of each logicElement that is connected to a valid connection
+                // We need to fill the Next and Previous lists of each logicElement
+                // that is connected to a valid connection
                 if (n.Start != null && n.End != null)
                 {
                     auxLogicElement = n.Start as LogicElement;
                     auxLogicElement.Next.Add(n.End as LogicElement);
                     auxLogicElement = n.End as LogicElement;
                     auxLogicElement.Previous.Add(n.Start as LogicElement);
-
-                    
                 }
             }
-
-
         }
 
         #endregion
