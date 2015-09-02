@@ -11,8 +11,8 @@
             </Hyperlink>
         </TextBlock>
         <TextBlock>           
-            <Hyperlink NavigateUri="http://www.upv.es" RequestNavigate="Hyperlink_RequestNavigate">
-            User Guide / Manual
+            <Hyperlink NavigateUri="https://www.dropbox.com/s/zs7midt48d4gnvr/Gu%C3%ADa%20Usuario.pdf?dl=0" RequestNavigate="Hyperlink_RequestNavigate">
+            User Guide / Manual (Spanish)
             </Hyperlink>
         </TextBlock>
         <Label Content="Degree Final Project / Trabajo Fin de Grado"/>
